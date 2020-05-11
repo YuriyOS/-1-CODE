@@ -6,7 +6,7 @@
   }
 
 .header {
-    font-family: 'Gotham Pro Regular';
+    font-family: 'Gotham Pro Regular';    
 }
 
 .header__logo-wrap {
@@ -23,16 +23,40 @@
     line-height: 18px;
 }
 
-.header__contacts-wrap {
-    padding-left: 10px;    
+.header__contacts-wrap {                
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     align-items: center;
     background-color: #538dcc;
 }
 
 .contacts-list {
     margin: 0px;
+    
+}
+
+.contacts-list__item {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list__item::before {
+    content: '';
+    display: block;    
+    width: 15px;    
+    height: 15px;        
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;    
+}
+
+.contact__icon-phone::before {
+    background-image: url(/images/contact-icons/phone.svg);
+}
+
+.contact__icon-email::before {
+    background-image: url(/images/contact-icons/email.svg);
 }
 
 .contacts-list__contact {
@@ -79,11 +103,71 @@
 
 /* @Tablet
 -------------------------------------------------------*/
+@media (min-width: 768px) {
 
-// @media (min-width: 768px) {
-//     .container {
-//         width: 700px;
-//         max-width: 100%; 
-//         margin: 0 auto;
-//     }
-// }
+    .container {
+        width: 768px;
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+
+    .header__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__contacts-wrap {
+        padding: 10px 0px 10px;
+        align-items: flex-end;
+        background-color: #ffffff;
+    }
+
+    .contacts-list__contact {        
+        margin-right: 10px;
+        color: #000000;
+    }
+    
+    .header__menu-btn {
+        border: 1px solid #000000;
+    }
+}
+/* @PC
+-------------------------------------------------------*/
+@media (min-width: 1620px) {
+
+    .container {
+        width: 1140px;
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+
+    .header__menu-btn {
+        display: none;
+    }
+
+    .navigation {        
+        position: unset;
+        padding: 0px;
+        border: none;        
+        transform: translateX(0%);
+        transition: none;
+        background-color: #538dcc;
+    }
+
+    .navigation-list {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation__item {
+        margin: 0px;
+    }
+
+    .navigation__link {
+        font-size: 16px;
+        line-height: 60px;
+        color: #ffffff;
+    }
+}
+
