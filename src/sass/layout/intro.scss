@@ -10,12 +10,10 @@
 }
 
 .intro__title {
-    margin: 0px 0px 50px;
-    font-size: 38px;
-    line-height: 48px;
+    margin: 0px 0px 50px;   
 }
 
-.intro__title-descriptor {
+.intro__descriptor {
     margin: 0px 0px 50px;
     font-size: 18px;
     line-height: 28px;
@@ -36,12 +34,7 @@
         width: 768px;
         max-width: 100%; 
         margin: 0 auto;
-    }
-
-    .intro__title {
-        font-size: 50px;
-        line-height: 60px;
-    }
+    }  
 
     .intro__title-descriptor {
         font-size: 24px;

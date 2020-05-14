@@ -74,12 +74,22 @@ html {
   background-color: #538dcc;
 }
 
+.h1-style {
+  font-size: 38px;
+  line-height: 48px;
+}
+
 .h2-style {
   margin: 0px;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Gotham Pro Medium';
   font-size: 30px;
+}
+
+.subheading-style {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 
@@ -91,8 +101,18 @@ html {
       margin: 0 auto;      
   }
   
+  .h1-style {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .h2-style {
     font-size: 50px;
+  }
+
+  .subheading-style {
+    font-size: 30px;
+    line-height: 40px;
   }
 
 }
@@ -105,8 +125,18 @@ html {
       margin: 0 auto;
   }
 
+  .h1-style {
+    font-size: 88px;
+    line-height: 98px;
+  }
+
   .h2-style {
     font-size: 70px;
+  }
+
+  .subheading-style {
+    font-size: 36px;
+    line-height: 46px;
   }
 
  
