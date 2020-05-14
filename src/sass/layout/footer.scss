@@ -1,19 +1,54 @@
 footer {
+    font-family: 'Gotham Pro Regular';    
     background-color: #f8f9fa;
 }
+
+.company-info-wrap_footer_position {
+    padding: 20px 0px 20px;
+}
+
+.logo-box-wrap_footer-position {
+    margin-bottom: 20px;
+}
+
+.contacts-list__item_text-font {
+    font-family: 'Gotham Pro Medium';
+    font-size: 16px;
+    line-height: 24px;    
+}
+
+.contacts-list__contact_text-color {
+    color: #000000;
+}
 .social-list {
-    margin: 0 auto;
-    width: 80px;
+    margin: 0 auto;    
+    width: 80px;    
     display: flex;    
     justify-content: space-between;
 }
 
 .additional-info {
-    text-align: center;
+    margin: 0px;
 }
 
-.additional-info__item_bg {
-    background-color: #f3f4f6;
+.additional-info__link {
+    text-align: center;
+    font-size: 14px;
+}
+
+.additional-info__item {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.additional-info__item_bg-color {
+    background-color: #f3f4f6;    
+}
+
+.additional-info__item_text-color {
+    color: #000000;
 }
 
 @media (min-width: 768px) {

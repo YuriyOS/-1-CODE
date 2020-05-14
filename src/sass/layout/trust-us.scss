@@ -1,40 +1,108 @@
-.trust-us {
-    padding-top: 20px;
+// .trust-us {
+//     padding-top: 20px;
+// }
+
+// .trust-us__slider {
+//     padding: 20px 0px 20px;
+//     background-color: #f7f7f7;
+// }
+// .trust-us-item {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100px;
+//     height: 100px;
+//     background-color: rgb(255, 255, 255);
+//     box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.1);
+// }
+
+// .carusel-img {
+//     padding-left: 10px;
+//     padding-right: 10px;
+// }
+
+// .owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+//     background: none !important;
+//     outline: none !important;
+//     opacity: 1;
+// }
+
+// .trust-us__slider {
+//     padding-left: 20px;
+// }
+
+// .trust-us__slider .left-arrow {
+//     width: 15px;
+// }
+
+// .trust-us__slider .right-arrow {
+//     width: 15px;
+// }
+
+.logo-box-pc {
+    display: none;
 }
 
-.trust-us__slider {
-    padding: 20px 0px 20px;
-    background-color: #f7f7f7;
-}
-.trust-us-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.1);
+@media (min-width: 768px) {
+
+    .container {
+        width: 768px;
+        max-width: 100%; 
+        margin: 0 auto;      
+    }
+
+    .logo-box-pc {
+        display: none;
+    }
 }
 
-.carusel-img {
-    padding-left: 10px;
-    padding-right: 10px;
+@media (min-width: 1620px) {
+
+    .container {
+        width: 1140px;
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+  
+
+    .trust-us {
+        padding: 50px 0px 0px;
+    }
+
+    .logo-box-pc {
+        display: block;
+        padding: 50px 0px 50px;
+        background-color: #f7f7f7;
+    }
+
+    // .logo-slider-mob-tablet {
+    //     display: none;
+    // }
+
+    .logo-pc {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-pc__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 180px;
+        height: 180px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.1);
+    }
+
+    .logo-pc__img {
+        width: 150px;
+    }
+
+
 }
 
-.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
-    background: none !important;
-    outline: none !important;
-    opacity: 1;
-}
 
-.trust-us__slider {
-    padding-left: 20px;
-}
-
-.trust-us__slider .left-arrow {
-    width: 15px;
-}
-
-.trust-us__slider .right-arrow {
-    width: 15px;
-}
+    
+ 

@@ -75,10 +75,42 @@ html {
 }
 
 .h2-style {
-  margin: 0px 0px 20px;
+  margin: 0px;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Gotham Pro Medium';
   font-size: 30px;
 }
+
+
+@media (min-width: 768px) {
+
+  .container {
+      width: 768px;
+      max-width: 100%; 
+      margin: 0 auto;      
+  }
+  
+  .h2-style {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 1620px) {
+
+  .container {
+      width: 1140px;
+      max-width: 100%; 
+      margin: 0 auto;
+  }
+
+  .h2-style {
+    font-size: 70px;
+  }
+
+ 
+}
+
+
 

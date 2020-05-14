@@ -9,13 +9,17 @@
     font-family: 'Gotham Pro Regular';    
 }
 
-.header__logo-wrap {
-    padding: 10px 0px 10px;
+.logo-box-wrap {
     display: flex;
     justify-content: flex-start;    
     align-items: flex-end;
 }
-.header__logo-descriptor {
+
+.logo-box-wrap_position {
+    padding: 10px 0px 10px;
+}
+
+.logo-descriptor {
     margin: 0px;
     padding-left: 5px;
     text-transform: uppercase;
@@ -23,7 +27,7 @@
     line-height: 18px;
 }
 
-.header__contacts-wrap {                
+.contacts-wrap {                
     display: flex;
     justify-content: space-between;    
     align-items: center;
@@ -43,25 +47,29 @@
 .contacts-list__item::before {
     content: '';
     display: block;    
-    width: 15px;    
-    height: 15px;        
+    width: 18px;    
+    height: 18px;        
     margin-right: 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;    
 }
 
-.contact__icon-phone::before {
+.contacts-list__item_icon-phone::before {
     background-image: url(/images/contact-icons/phone.svg);
 }
 
-.contact__icon-email::before {
+.contacts-list__item_icon-email::before {
     background-image: url(/images/contact-icons/email.svg);
 }
 
+.contacts-list__item_icon-point::before {
+    background-image: url(/images/contact-icons/map-locator.svg);
+}
+
 .contacts-list__contact {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 24px;
     color: #ffffff;
 }
 
@@ -111,19 +119,23 @@
         margin: 0 auto;
     }
 
-    .header__wrap {
+    .company-info-wrap {
         display: flex;
         justify-content: space-between;
     }
 
-    .header__contacts-wrap {
+    .contacts-wrap {
         padding: 10px 0px 10px;
         align-items: flex-end;
         background-color: #ffffff;
     }
 
-    .contacts-list__contact {        
+    .header__contacts {
         margin-right: 10px;
+    }
+
+    .contacts-list__contact {                
+        font-size: 16px;
         color: #000000;
     }
     
@@ -143,6 +155,10 @@
 
     .header__menu-btn {
         display: none;
+    }
+
+    .header__contacts {
+        margin: 0px;
     }
 
     .navigation {        
