@@ -30,11 +30,11 @@
 /* @Tablet
 -------------------------------------------------------*/
 @media (min-width: 768px) {
-    .container {
-        width: 768px;
-        max-width: 100%; 
-        margin: 0 auto;
-    }  
+    // .container {
+    //     width: 768px;
+    //     max-width: 100%; 
+    //     margin: 0 auto;
+    // }  
 
     .intro__title-descriptor {
         font-size: 24px;
@@ -44,11 +44,11 @@
 
 @media (min-width: 1620px) {
 
-    .container {
-        width: 1140px;
-        max-width: 100%; 
-        margin: 0 auto;
-    }
+    // .container {
+    //     width: 1140px;
+    //     max-width: 100%; 
+    //     margin: 0 auto;
+    // }
     .intro {
         padding: 170px 0px 280px; 
     }
@@ -57,7 +57,7 @@
         line-height: 96px;
     }
 
-    .intro__title-descriptor {        
+    .intro__descriptor {        
         margin: 0px 0px 60px;
         font-size: 36px;
         line-height: 44px;

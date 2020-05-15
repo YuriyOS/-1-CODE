@@ -1,25 +1,25 @@
-.container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto; 
-    padding: 0px 10px 0px 10px;   
-  }
+// .container {
+//     width: 100%;
+//     max-width: 100%;
+//     margin: 0 auto; 
+//     padding: 0px 10px 0px 10px;   
+//   }
 
 .header {
     font-family: 'Gotham Pro Regular';    
 }
 
-.logo-box-wrap {
+.logo {
     display: flex;
     justify-content: flex-start;    
     align-items: flex-end;
 }
 
-.logo-box-wrap_position {
+.header__logo {
     padding: 10px 0px 10px;
 }
 
-.logo-descriptor {
+.logo__descriptor {
     margin: 0px;
     padding-left: 5px;
     text-transform: uppercase;
@@ -27,7 +27,9 @@
     line-height: 18px;
 }
 
-.contacts-wrap {                
+.contacts { 
+    margin: 0px -10px; 
+    padding-left: 10px;
     display: flex;
     justify-content: space-between;    
     align-items: center;
@@ -35,8 +37,7 @@
 }
 
 .contacts-list {
-    margin: 0px;
-    
+    margin: 0px;    
 }
 
 .contacts-list__item {
@@ -49,17 +50,17 @@
     display: block;    
     width: 18px;    
     height: 18px;        
-    margin-right: 5px;
+    margin-right: 10px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;    
+    background-size: contain;
 }
 
-.contacts-list__item_icon-phone::before {
+.contacts-list__item_icon_phone::before {
     background-image: url(/images/contact-icons/phone.svg);
 }
 
-.contacts-list__item_icon-email::before {
+.contacts-list__item_icon_email::before {
     background-image: url(/images/contact-icons/email.svg);
 }
 
@@ -67,7 +68,7 @@
     background-image: url(/images/contact-icons/map-locator.svg);
 }
 
-.contacts-list__contact {
+.contacts-list__link {
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
@@ -83,17 +84,14 @@
 }
 
 .navigation {
+    padding: 20px 0px;
+    display: none;
     padding-left: 15px;
-    transform: translateX(-100%);
     width: 100%;
     background-color: #538dcc;
-    transition: linear 0.5s;
+    // transition: linear 0.5s;
     position: absolute;
     border-top: 2px solid #ffe033;
-}
-
-.nav-open {
-    transform: translateX(0);
 }
 
 .navigation__item {
@@ -102,7 +100,7 @@
 
 .navigation__link {
     font-size: 14px;
-    color: #538dcc;
+    color: #ffffff;
 }
 
 .nav-link:hover {

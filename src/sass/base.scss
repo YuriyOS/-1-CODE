@@ -63,6 +63,7 @@ html {
   min-height: 50px;
   font-family: 'Gotham Pro Regular';
   font-size: 18px;
+  cursor: pointer;
   color: #000000;
   background-color: #ffe033;
   border: 1px solid #538dcc;
@@ -75,6 +76,9 @@ html {
 }
 
 .h1-style {
+  margin: 0px;
+  text-align: center;
+  font-family: 'Gotham Pro Medium';
   font-size: 38px;
   line-height: 48px;
 }
@@ -87,7 +91,29 @@ html {
   font-size: 30px;
 }
 
+.heading-style-1,
+.heading-style-2 {
+  font-family: 'Gotham Pro Medium';  
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.heading-style-1 {
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.heading-style-2 {
+  font-size: 38px;
+  line-height: 48px;
+}
+
 .subheading-style {
+  margin: 0px;
+  text-align: center;
+  font-family: 'Gotham Pro Regular';
   font-size: 20px;
   line-height: 30px;
 }
@@ -109,6 +135,17 @@ html {
   .h2-style {
     font-size: 50px;
   }
+
+  
+.heading-style-1 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.heading-style-2 {
+  font-size: 58px;
+  line-height: 78px;
+}
 
   .subheading-style {
     font-size: 30px;
@@ -133,6 +170,17 @@ html {
   .h2-style {
     font-size: 70px;
   }
+
+  .heading-style-1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  
+  .heading-style-2 {
+    font-size: 88px;
+    line-height: 108px;
+  }
+  
 
   .subheading-style {
     font-size: 36px;

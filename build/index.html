@@ -20,29 +20,32 @@
     <header>
       <header class="header">
           <div class="container">
+      
               <div class="company-info-wrap">
       
-                  <div class="logo-box-wrap logo-box-wrap_position">        
+                  <div class="logo header__logo">        
       
-                      <a href="index.html" class="logo-link">
-                      <img src="./images/logo-cpg.png" width="150px" alt="Логотип компанії" 
-                           class="logo-link__img">
+                      <a href="index.html" class="logo__link">
+                          <img src="./images/logo-cpg.png" width="150px" alt="Логотип компанії" 
+                               class="logo__img">
                       </a>
       
-                      <p class="logo-descriptor">ОБСЛУГОВУВАННЯ ТА <br> УПРАВЛІННЯ НЕРУХОМІСТЮ</p>                        
+                      <p class="logo__descriptor">ОБСЛУГОВУВАННЯ ТА <br> УПРАВЛІННЯ НЕРУХОМІСТЮ</p>                        
                   </div> 
                           
-                  <div class="contacts-wrap">
+                  <div class="contacts">
       
                       <ul class="contacts-list header__contacts list">
                           <li class="contacts-list__item 
-                                     contacts-list__item_icon-phone">
-                              <a href="" class="contacts-list__contact link">0 800 33 64 74</a>
+                                     contacts-list__item_icon_phone">
+                              <a href="tel:0800336474" 
+                                 class="contacts-list__link link">0 800 33 64 74</a>
                           </li>
       
                           <li class="contacts-list__item
-                                     contacts-list__item_icon-email">
-                              <a href="" class="contacts-list__contact link">office@cleaning-pro.com.ua</a>
+                                     contacts-list__item_icon_email">
+                              <a href="mailto:office@cleaning-pro.com.ua" 
+                                 class="contacts-list__link link">office@cleaning-pro.com.ua</a>
                           </li>
                       </ul>        
                               
@@ -74,7 +77,7 @@
     <main>
 
       <section class="intro">
-      
+          <div class="container">
           <h1 class="intro__title h1-style">CLEANING PRO GROUP</h1>
           <p class="intro__descriptor">НАШІ ТЕХНОЛОГІЇ ЗАОЩАДЯТЬ <br> ВАШІ ГРОШІ ТА ЧАС</p>    
       
@@ -88,6 +91,7 @@
                   <a class="intro__button style-btn hover-btn link">Державна нерухомість</a>
               </li>
           </ul>
+      </div>
       
       </section>
 
@@ -223,6 +227,7 @@
                       <div class="service__heading_style-1">нерухомості</div>
                   </h3>
       
+                  
                   <p class="service__subheading">В будь якій ситуації ми завжди з вами.</p>
       
                   <ul class="advantages list">
@@ -336,8 +341,6 @@
     </footer>
 
     
-    <script src="./libs/owlcarusel2/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
     
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
