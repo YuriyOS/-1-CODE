@@ -3,6 +3,7 @@
  */
 
 @import 'normalize.scss';
+
 @import 'base.scss';
 
 @import 'layout/header';
@@ -17,10 +18,34 @@
 
 @import 'layout/services';
 
-@import 'layout/test';
-
 @import 'layout/intro-commercial';
 
 @import 'layout/services-description';
 
 @import 'blocks/why-cpg';
+
+@import 'blocks/trust';
+
+@import 'blocks/partners';
+
+@import 'blocks/awards.scss';
+
+@import 'blocks/audit.scss';
+
+@import 'layout/intro-state';
+
+@import 'layout/intro-company';
+
+@import 'blocks/acquaintance';
+
+@import 'blocks/mission.scss';
+
+@import "../../node_modules/owl.carousel2/dist/assets/owl.carousel";
+
+@import 'blocks/reviews';
+
+@import 'blocks/facts-about-company';
+
+@import 'blocks/service-about-company';
+
+

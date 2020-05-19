@@ -1,0 +1,21 @@
+.state__intro {    
+    padding: 50px 0px 80px;    
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(/images/commercial-page/commercial-intro-bg-min.png);
+}
+.property__heading {
+    margin-bottom: 50px;
+    
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1620px) {
+    .state__intro {
+        padding: 180px 0px 200px;  
+    }
+            
+}

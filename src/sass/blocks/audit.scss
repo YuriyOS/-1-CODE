@@ -1,0 +1,49 @@
+.action-form {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    color: #ffffff;
+    background-image: url(/images/audit-form-bg-min.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.action-form__h2-style {
+    margin-bottom: 20px;
+}
+
+.action-form__subheading::after {
+    content: '';
+    display: block;
+    margin: 20px auto 0px;
+    border: 30px solid transparent;
+    border-top: 43px solid #ffffff;    
+    width: 0;
+    height: 0;
+}
+
+@media (min-width: 1620px) {
+    .action-form__h2-style {
+        margin-bottom: 30px;
+        font-size: 58px;
+        line-height: 60px;
+    }
+    
+    .action-form__subheading-style {
+        margin: 0px;
+        font-size: 32px;
+        line-height: 38px;
+        // margin-bottom: 30px;
+    }
+    
+    .action-form__subheading::after {
+        content: '';
+        display: block;
+        margin: 20px auto 0px;
+        border: 30px solid transparent;
+        border-top: 43px solid #ffffff;    
+        width: 0;
+        height: 0;
+    }
+}

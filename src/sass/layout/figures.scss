@@ -4,13 +4,20 @@
     text-align: center;
     font-family: 'Gotham Pro Medium';
     background-image: url(/images/home-page/figures-bg.jpg);
-    background-position: bottom;
+    background-size: cover;
+    background-position: center bottom;
     background-repeat: no-repeat;
 }
 
 .figures__subheading {
     margin: 0px 0px 20px; 
 }
+
+.figures__logo {
+    display: block;
+    text-align: center;
+}
+
 .figures__logo-img {
     margin-bottom: 20px;
 }
@@ -20,6 +27,7 @@
 }
 
 .figures-list__item {
+    text-align: center;
     font-family: 'Gotham Pro Regular';
 
     &::before {
@@ -31,17 +39,6 @@
         border-left: 2px dashed #538dcc;
     }
 }
-
-// .figures-list__item::after {
-//     content: '';
-//     display: block;
-//     width: 200px;
-//     margin: 0 auto 10px;
-//     font-family: 'Gotham Pro Regular';
-//     font-size: 14px;
-//     line-height: 18px;
-// }
-
 
 .figures-list__value {
     margin: 0px;
@@ -58,11 +55,11 @@
 }
 
 @media (min-width: 768px) {
-    .container {
-        width: 768px;
-        max-width: 100%; 
-        margin: 0 auto;
-    }
+    // .container {
+    //     width: 768px;
+    //     max-width: 100%; 
+    //     margin: 0 auto;
+    // }
 
     .figures__logo::after {
         content: '';
@@ -81,13 +78,24 @@
         &::before {
             content: '';                     
             display: block;
-            width: 320px;
+            // width: 320px;
             height: 2px;
             border-top: 2px dashed #538dcc;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
+    }
+
+    .figures-list_before::before {
+        // content: '';                     
+        //     display: block;
+            width: 320px;
+            // height: 2px;
+            // border-top: 2px dashed #538dcc;
+            // position: absolute;
+            // left: 50%;
+            // transform: translateX(-50%);
     }
 
     .figures-list__item {
@@ -98,15 +106,10 @@
 
 @media (min-width: 1620px) {
 
-    .container {
-        width: 1140px;
-        max-width: 100%; 
-        margin: 0 auto;
-    }
-
-    // .h2-style {
-    //     font-size: 60px;
-    //     margin-bottom: 50px;
+    // .container {
+    //     width: 1140px;
+    //     max-width: 100%; 
+    //     margin: 0 auto;
     // }
 
     .figures {
@@ -132,9 +135,13 @@
         display: flex;
         justify-content: space-between;
 
-        &::before {
-            width: 860px;
-        }
+        // &::before {
+        //     width: 860px;
+        // }
+    }
+
+    .figures-list_before::before {
+        width: 860px;        
     }
 
     .figures-list__item::before {

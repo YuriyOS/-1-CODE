@@ -1,0 +1,22 @@
+.awards {
+    padding: 50px 0px 50px;
+}
+
+.awards-list__item {
+    border: 2px solid #538dcc;
+}
+
+@media (min-width: 1620px) {
+    
+    .awards-list {
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .awards-list__item {
+        width: 280px;
+        height: 400px;
+        background-color: slategray;
+    }
+}

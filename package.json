@@ -50,6 +50,7 @@
     "usedcss": "^1.0.7"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "owl.carousel2": "^2.2.1"
   }
 }

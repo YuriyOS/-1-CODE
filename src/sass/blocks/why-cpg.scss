@@ -1,8 +1,61 @@
-.why-cpg {    
+.progress__title {    
     padding: 50px 0px 100px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
     background-size: cover;
     background-position: center bottom;
-    background-image: url(/images/cpg-partner-block/why-cpg-partneg-bg.png);
+    background-image: url(/images/cpg-partner-block/why-cpg-partneg-bg-min.png);
 }
 
+.title::after {
+    content: '';
+    display: block;
+    margin: 20px auto 0px;
+    border: 30px solid transparent;
+    border-top: 43px solid #ffffff;    
+    width: 0;
+    height: 0;
+}
+
+.progress__figuress {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(/images/cpg-partner-block/figures-why-cpg-partneg-bg-min.png);
+}
+
+.progress-list {
+    margin: 0px;
+}
+
+.figures-list_font_size {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {  
+
+    .progress-list::before {        
+        width: 320px;
+    } 
+}
+
+@media (min-width: 1620px) {   
+
+    .progress__figuress {
+        padding: 50px 0px;
+    }
+    
+    .progress-list::before {        
+        width: 790px;
+    }  
+
+    .progress-list__item {
+        flex: 0 0 350px;
+    }
+
+    .process-list__text {
+        width: 300px;
+    }
+}
 

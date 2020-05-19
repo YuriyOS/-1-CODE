@@ -1,6 +1,6 @@
 
 .services {
-    // padding-top: 20px;
+    padding-top: 50px;
     font-family: 'Gotham Pro Regular';
 }
 
@@ -18,6 +18,11 @@
     line-height: 28px;
 }
 
+.service__heading-style-1,
+.service__heading-style-2 {
+    text-align: left;
+    color: #000000;
+}
 .service__heading_style-2 {
     font-size: 30px;
     line-height: 38px;
