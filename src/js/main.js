@@ -5,7 +5,7 @@ $(function(){
         $('.navigation').slideToggle();
     });
 
-    $('.owl-carousel').owlCarousel({
+    $('.logo-box-mob__slider').owlCarousel({
 
         center: true,
         loop: true,
@@ -23,20 +23,13 @@ $(function(){
     });
 
     $('.reviews__slider').owlCarousel({
-
+        items: 1,
         center: true,
-        // loop: true,
-
-        responsive:{
-            0:{                
-                items:2
-            },
-            768:{
-                items:4
-            }
-            
-        }
-
+        loop: true,
+        nav: true,                  
+        navClass: ['reviws-prev', 'reviws-next'],
+        navText: '',
+        navContainerClass: 'reviews__nav-wrap'
     });
 
 

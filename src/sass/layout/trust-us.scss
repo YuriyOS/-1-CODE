@@ -2,14 +2,16 @@
     padding-top: 50px;
 }
 
-.trust-us__slider {
+.logo-box-mob__slider {
     padding: 50px 20px;
     background-color: #f7f7f7;
 }
-.trust-us-item {
+
+.logo-box-mob__item {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;    
     width: 100px;
     height: 100px;
     background-color: rgb(255, 255, 255);
@@ -21,21 +23,13 @@
     padding-right: 10px;
 }
 
-// .owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
-//     background: none !important;
-//     outline: none !important;
-//     opacity: 1;
-// }
-
-.trust-us__slider .left-arrow {
+.logo-box-mob__slider.left-arrow {
     width: 15px;
 }
 
-.trust-us__slider .right-arrow {
+.logo-box-mob__slider .right-arrow {
     width: 15px;
 }
-
-
 
 .logo-box-pc {
     display: none;
@@ -47,7 +41,7 @@
         display: none;
     }
 
-    .trust-us-item {
+    .logo-box-mob__item {
         width: 150px;
         height: 150px;
     }
@@ -56,17 +50,16 @@
 @media (min-width: 1620px) {
    
     .trust-us {
-        padding: 50px 0px 50px;
+        padding: 50px 0px 0px;
     }
 
-    .trust-us__logo-slider {
+    .trust-us__slider {
         display: none;
     }
 
     .logo-box-pc {
         display: block;
         margin: 0px;
-        // padding: 50px 0px 50px;        
     }
 
     .logo-box-pc_bg_color {
@@ -74,8 +67,7 @@
     }
 
     .logo-pc {
-        margin: 0px;
-        // margin-bottom: 50px;
+        margin: 0px 0px 50px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -94,7 +86,7 @@
     }
 
     .logo-pc__img {
-        width: 150px;
+        width: 120px;
     }
 
 }

@@ -1,8 +1,29 @@
-.partners {
-    padding: 50px 0px;
-    background-color: #f7f7f7;
-}
-.partners__logo {
-    margin: 0 auto;
-    width: 750px;
+// .logo-mob {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .logo-mob__item {
+//     width: 100px;
+//     height: 100px;
+// }
+// .logo-mob__img {
+//     width: 100px;
+// }
+
+
+
+@media (min-width: 768px) {
+    .partners {
+        padding: 50px 0px;
+        background-color: #f7f7f7;
+    }
+
+    .partners__logo-mob {
+        display: none;
+    }
+    .partners__logo-pc {
+        margin: 0 auto;
+        width: 750px;
+    }
 }

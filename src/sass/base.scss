@@ -84,13 +84,16 @@ html {
 }
 
 .h2-style {
-  margin: 0px 0px 50px;
+  margin: 0px;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Gotham Pro Medium';
   font-size: 30px;
 }
 
+.h2-style_margin-bottom {
+  margin-bottom: 50px;
+}
 .heading-style-1,
 .heading-style-2 {
   font-family: 'Gotham Pro Medium';  
@@ -169,7 +172,7 @@ html {
   }
 
   .h2-style {
-    margin: 0px 0px 50px;    
+    margin: 0px;    
     font-size: 70px;
   }
 

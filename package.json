@@ -9,10 +9,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+  "homepage": "https://yuriyos.github.io/1-CODE",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
+    "url": "https://github.com/YuriyOS/1-CODE"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
