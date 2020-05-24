@@ -45,6 +45,13 @@ html {
   text-decoration: none;
 }
 
+.section_padding_top {
+  padding-top: 50px;
+}
+
+.section_padding_bottom {
+  padding-bottom: 50px;
+}
 
 .reset-btn {
   border: none;
@@ -54,10 +61,12 @@ html {
 }
 
 .style-btn {
+  margin: 0 auto;
+  padding: 0px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  text-align: center;
   width: 300px;
   max-width: 100%;
   min-height: 50px;
@@ -69,7 +78,13 @@ html {
   border: 1px solid #538dcc;
 }
 
-.hover-btn:hover {
+// .hover-btn:hover {
+//   border: 1px solid #ffffff;
+//   color: #ffffff;
+//   background-color: #538dcc;
+// }
+
+.style-btn:hover {
   border: 1px solid #ffffff;
   color: #ffffff;
   background-color: #538dcc;
@@ -83,19 +98,35 @@ html {
   line-height: 48px;
 }
 
-.h2-style {
-  margin: 0px;
+.h2 {
+  margin: 0px 0px 50px;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Gotham Pro Medium';
   font-size: 30px;
 }
 
-.h2-style_margin-bottom {
-  margin-bottom: 50px;
+.h2_margin-bottom {
+  margin-bottom: 0px;
 }
+
+.h3 {
+  margin: 0px;
+  font-family: 'Gotham Pro Regular';
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.h4 {
+  margin: 0px;
+  font-family: 'Gotham Pro Regular';
+  font-size: 18px;
+  line-height: 26px;
+}
+
 .heading-style-1,
 .heading-style-2 {
+  // margin: 0px;
   font-family: 'Gotham Pro Medium';  
   text-transform: uppercase;
   text-align: center;
@@ -121,6 +152,20 @@ html {
   line-height: 30px;
 }
 
+.main-text {
+  font-family: 'Gotham Pro Regular';
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.main-text_bold {
+  font-weight: 700;
+}
+
+.main-text_italic {
+  font-style: italic;
+}
 
 @media (min-width: 768px) {
 
@@ -130,13 +175,14 @@ html {
       margin: 0 auto;    
   }
   
-  .h1-style {
+  .h1 {
     font-size: 50px;
     line-height: 60px;
   }
 
-  .h2-style {
+  .h2 {
     font-size: 50px;
+    line-height: 60px;
   }
 
   
@@ -171,9 +217,9 @@ html {
     line-height: 98px;
   }
 
-  .h2-style {
-    margin: 0px;    
+  .h2 {
     font-size: 70px;
+    line-height: 80px;
   }
 
   .heading-style-1 {
@@ -186,13 +232,14 @@ html {
     line-height: 108px;
   }
   
-
   .subheading-style {
     font-size: 36px;
     line-height: 46px;
   }
 
- 
+  .main-text {
+    font-size: 18px;
+  }
 }
 
 

@@ -1,12 +1,30 @@
+.acquaintance {
+    padding: 50px 0px;
+}
+
+.acquaintance__text {
+    margin: 0px;
+}
 .acquaintance__text-block {
     display: block;
     margin-bottom: 10px;
 }
 
-.acquaintance__text {
-    font-size: 16px;
-}
-
 .acquaintance__img {
     max-width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .acquaintance-text-wrap {
+        margin: 0 auto;
+        width: 500px;
+    }
+}
+
+@media (min-width: 1620px) {
+    .acquaintance-text-wrap {
+        width: 800px;
+    }
+    
 }

@@ -1,26 +1,10 @@
-.trust-us {
-    padding-top: 50px;
-}
+// .trust-us {
+//     padding: 50px 0px;
+// }
 
 .logo-box-mob__slider {
     padding: 50px 20px;
     background-color: #f7f7f7;
-}
-
-.logo-box-mob__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;    
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.1);
-}
-
-.carusel-img {
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .logo-box-mob__slider.left-arrow {
@@ -29,6 +13,31 @@
 
 .logo-box-mob__slider .right-arrow {
     width: 15px;
+}
+
+.logo-box-mob__partners {
+    margin: 0 auto;
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+}   
+
+.logo-box-mob__item,
+.logo-box-pc__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto; 
+    width: 100px;
+    height: 100px;
+    border: 1px solid #f4f4f4;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.1);
+}
+
+.logo-box-mob__img { 
+    width: 100px;
+    padding: 10px;
 }
 
 .logo-box-pc {
@@ -41,17 +50,25 @@
         display: none;
     }
 
+    .logo-box-mob__partners {
+        width: 640px;
+    } 
+
     .logo-box-mob__item {
         width: 150px;
         height: 150px;
     }
+
+    .logo-box-mob__img {
+        width: 140px;        
+    }
 }
 
 @media (min-width: 1620px) {
-   
-    .trust-us {
-        padding: 50px 0px 0px;
-    }
+    
+    // .trust-us {
+    //     padding: 50px 0px 0px;
+    // }
 
     .trust-us__slider {
         display: none;
@@ -73,20 +90,31 @@
         flex-wrap: wrap;
     }
 
-    .logo-pc__item {
-        padding: 10px;
-        margin: 6px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;        
+    .logo-box-pc__item {
+        margin: 5px;        
         width: 180px;
-        height: 180px;
-        background-color: #ffffff;
-        box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.1);
+        height: 180px;        
+    }
+    
+
+    // .logo-box-pc__item {
+    //     margin: 5px;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;        
+    //     width: 180px;
+    //     height: 180px;
+    //     border: 1px solid #f4f4f4;
+    //     background-color: #ffffff;
+    //     box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.1);
+    // }
+    
+    .logo-box-mob__partners {
+        width: 768px;
     }
 
-    .logo-pc__img {
-        width: 120px;
+    .logo-box-pc__img {
+        width: 140px;
     }
 
 }

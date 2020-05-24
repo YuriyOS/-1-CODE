@@ -1,8 +1,9 @@
 .mission {
     padding: 50px 0px;
+    min-height: 500px;
     color: #ffffff;
     background-image: url(/images/about-company/mission-bg-min.jpg);
-    background-position: center;
+    background-position: top center;
     background-size: cover;
 }
 
@@ -10,5 +11,20 @@
     padding: 20px;
     margin: 0px;
     text-align: center;
-    background-color: green;
+    color: #ffffff;
+    background-color: rgba(83, 141, 204, 0.8);
+}
+
+@media (min-width: 768px) {
+    .mission__text {
+        margin: 0 auto;
+        width: 500px;
+    }
+}
+
+@media (min-width: 1620px) {
+    .mission__text {
+        width: 800px;
+    }
+    
 }

@@ -1,14 +1,14 @@
-.progress__title {    
-    padding: 50px 0px 100px;
-    min-height: 600px;
+.title-block {
+    padding: 50px 0px;        
+    min-height: 300px;
     display: flex;
     align-items: center;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     background-image: url(/images/cpg-partner-block/why-cpg-partneg-bg-min.png);
 }
 
-.title::after {
+.title-block__heading::after {
     content: '';
     display: block;
     margin: 20px auto 0px;
@@ -18,44 +18,47 @@
     height: 0;
 }
 
-.progress__figuress {
+.figures_max {
     padding: 50px 0px;
     background-size: cover;
     background-position: center bottom;
     background-image: url(/images/cpg-partner-block/figures-why-cpg-partneg-bg-min.png);
 }
 
-.progress-list {
-    margin: 0px;
+.figures__list_max {
+    margin-bottom: 0px;
 }
 
-.figures-list_font_size {
-    font-size: 16px;
+.figures__text_font {
+    font-family: 'Gotham Pro Medium';
+    color: #538dcc;
 }
 
 @media (min-width: 768px) {  
 
-    .progress-list::before {        
+    .figures__list_max::before {        
         width: 320px;
     } 
 }
 
 @media (min-width: 1620px) {   
 
-    .progress__figuress {
-        padding: 50px 0px;
+    .title-block {    
+        min-height: 500px;
     }
     
-    .progress-list::before {        
-        width: 790px;
-    }  
+    .figures__list_max {
 
-    .progress-list__item {
+        margin-bottom: 0px;        
+
+            &::before {
+            width: 790px;
+            }
+    }
+
+    .figures__item_max {
         flex: 0 0 350px;
     }
 
-    .process-list__text {
-        width: 300px;
-    }
 }
 
