@@ -41,7 +41,7 @@
 
 .reviews__text::after {
     content: '';
-    margin: 0 auto;    
+    margin: 10px auto 0px;    
     display: block;
     width: 34px;
     height: 34px;
@@ -54,7 +54,6 @@
     height: 32px;
     background-image: url(/images/arrow-right.png);
     background-repeat: no-repeat;
-    color: seagreen;   
 }
 
 .reviws-prev {
@@ -62,7 +61,6 @@
     height: 32px;
     background-image: url(/images/arrow-left.png);
     background-repeat: no-repeat;
-    color: seagreen;    
 }
 
 .reviews__nav-wrap {

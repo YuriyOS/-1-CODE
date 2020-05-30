@@ -33,6 +33,10 @@
     margin: 0px;    
 }
 
+.contacts-list__link_color {
+    color: #ffffff;
+}
+
 .contacts-list__item {
     display: flex;
     align-items: center;
@@ -49,22 +53,24 @@
     background-size: contain;
 }
 
-.contacts-list__item_icon_phone::before {
-    background-image: url(/images/contact-icons/phone.svg);
+.contacts-list__phone-icon::before {
+    background-image: url(/images/contact-icons/phone-icon-white.png);
 }
 
-.contacts-list__item_icon_email::before {
-    background-image: url(/images/contact-icons/email.svg);
+.contacts-list__phone-icon_blue::before {
+    background-image: url(/images/contact-icons/phone-icon-blue.png);
 }
 
-.contacts-list__item_icon-point::before {
-    background-image: url(/images/contact-icons/map-locator.svg);
+.contacts-list__email-icon::before {
+    background-image: url(/images/contact-icons/email-icon-white.png);
 }
 
-.contacts-list__link {
-    font-size: 14px;
-    line-height: 24px;
-    color: #ffffff;
+.contacts-list__email-icon_blue::before {
+    background-image: url(/images/contact-icons/email-icon-blue.png);
+}
+
+.contacts-list__point-icon::before {
+    background-image: url(/images/contact-icons/place-icon-blue.png);
 }
 
 /* Mobile menu*/
@@ -121,17 +127,26 @@
         background-color: #ffffff;
     }
 
+    .contacts-list__link_color {
+        color: #000000;
+    }
+
     .header__contacts {
         margin-right: 10px;
     }
 
-    .contacts-list__link {                
-        font-size: 16px;
-        color: #000000;
+    .contacts-list__phone-icon::before {
+        background-image: url(/images/contact-icons/phone-icon-blue.png);
+    }    
+    
+    .contacts-list__email-icon::before {
+        background-image: url(/images/contact-icons/email-icon-blue.png);
     }
     
-    .header__menu-btn {
-        border: 1px solid #000000;
+    .header__menu-btn {        
+        margin-right: 10px;
+        border: 2px solid #538dcc;
+        background-image: url(/images/menu-btn-blue.png);
     }
 }
 /* @PC
@@ -178,4 +193,3 @@
         color: #ffffff;
     }
 }
-

@@ -45,14 +45,6 @@ html {
   text-decoration: none;
 }
 
-.section_padding_top {
-  padding-top: 50px;
-}
-
-.section_padding_bottom {
-  padding-bottom: 50px;
-}
-
 .reset-btn {
   border: none;
   background-color: transparent;
@@ -135,11 +127,13 @@ html {
 }
 
 .heading-style-1 {
+  display: block;
   font-size: 18px;
   line-height: 38px;
 }
 
 .heading-style-2 {
+  display: block;
   font-size: 38px;
   line-height: 48px;
 }

@@ -1,29 +1,34 @@
-.acquaintance {
-    padding: 50px 0px;
+.introduction {
+    padding: 50px 0px 20px;
 }
 
-.acquaintance__text {
+.introduction__text {
     margin: 0px;
 }
-.acquaintance__text-block {
+.introduction__text-block {
     display: block;
-    margin-bottom: 10px;
+    margin: 0px 0px 10px;
 }
 
-.acquaintance__img {
+.introduction__text-block_align {
+    margin: 0px 0px 10px;
+    text-align: center;
+}
+
+.introduction__img {
     max-width: 100%;
 }
 
 
 @media (min-width: 768px) {
-    .acquaintance-text-wrap {
+    .introduction__text-wrap {
         margin: 0 auto;
         width: 500px;
     }
 }
 
 @media (min-width: 1620px) {
-    .acquaintance-text-wrap {
+    .introduction__text-wrap {
         width: 800px;
     }
     
