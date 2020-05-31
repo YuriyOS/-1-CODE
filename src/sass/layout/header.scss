@@ -22,7 +22,7 @@
 
 .contacts { 
     margin: 0px -10px; 
-    padding-left: 10px;
+    padding: 10px 0px 10px 10px;
     display: flex;
     justify-content: space-between;    
     align-items: center;
@@ -75,11 +75,11 @@
 
 /* Mobile menu*/
 .header__menu-btn {
+    margin-right: 10px;
     padding: 0px;
     display: block;
     width: 60px;
     height: 60px;
-    background-image: url(/images/menu-btn-img.png);
 }
 
 .navigation {
@@ -88,7 +88,6 @@
     padding-left: 15px;
     width: 100%;
     background-color: #538dcc;
-    // transition: linear 0.5s;
     position: absolute;
     border-top: 2px solid #ffe033;
 }
@@ -102,19 +101,60 @@
     color: #ffffff;
 }
 
-.nav-link:hover {
-    color: #ffe033;
+// Hamburger
+
+.hamburger {
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+	transition: top 0.3s linear;
+	
+}
+
+.hamburger:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+	transition: top 0.3s linear;
+}
+
+.hamburger:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+	transition: top 0.3s linear;
+}
+
+.hamburger_active:before,
+.hamburger_active:after {
+	background-color: #fff;
+	top: 0px;
+	transition: top 0.3s linear, transform 0.3s linear;
+}
+
+.hamburger_active {
+	background-color: transparent;
+	transition: background-color 0.3s linear;
+}
+
+.hamburger_active:before {
+	transform: rotate(45deg);
+}
+
+.hamburger_active:after {
+	transform: rotate(-45deg);
 }
 
 /* @Tablet
 -------------------------------------------------------*/
-@media (min-width: 768px) {
-
-    .container {
-        width: 768px;
-        max-width: 100%; 
-        margin: 0 auto;
-    }
+@media (min-width: 768px) {  
 
     .company-info-wrap {
         display: flex;
@@ -122,7 +162,8 @@
     }
 
     .contacts {
-        padding: 10px 0px 10px;
+        margin: 0px;
+        // padding: 10px 0px 10px;
         align-items: flex-end;
         background-color: #ffffff;
     }
@@ -143,24 +184,70 @@
         background-image: url(/images/contact-icons/email-icon-blue.png);
     }
     
-    .header__menu-btn {        
-        margin-right: 10px;
-        border: 2px solid #538dcc;
-        background-image: url(/images/menu-btn-blue.png);
+    .header__menu-btn {
+        margin: 0px;          
     }
+
+    .menu-wrap {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #538dcc;
+    }
+
+    .hamburger {
+        width: 20px;
+        height: 3px;
+        background-color: #538dcc;            
+    }
+    
+    .hamburger:before {
+        content: '';
+        position: absolute;
+        top: -7px;
+        width: 100%;
+        height: 3px;
+        background-color: #538dcc;
+        transition: top 0.3s linear;
+    }
+    
+    .hamburger:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        width: 100%;
+        height: 3px;
+        background-color: #538dcc;
+        transition: top 0.3s linear;
+    }
+
+    .hamburger_active:before,
+    .hamburger_active:after {
+	background-color: #538dcc;
+	top: 0px;
+	transition: top 0.3s linear, transform 0.3s linear;
+}
+
+    .hamburger_active {
+        background-color: transparent;
+        transition: background-color 0.3s linear;
+    }
+
+    
 }
 /* @PC
 -------------------------------------------------------*/
 @media (min-width: 1620px) {
 
-    .container {
-        width: 1140px;
-        max-width: 100%; 
-        margin: 0 auto;
+    .header__menu-btn,
+    .menu-wrap {
+        display: none;
     }
 
-    .header__menu-btn {
-        display: none;
+    .contacts-list {
+        margin-right: 0px;
     }
 
     .contacts {
@@ -191,5 +278,16 @@
         font-size: 16px;
         line-height: 60px;
         color: #ffffff;
+        position: relative;        
+    }
+
+    .navigation__link:hover::after {
+        content: '';
+        margin-top: -10px;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
     }
 }

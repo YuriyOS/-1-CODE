@@ -1,18 +1,12 @@
 .services {
-    padding-top: 50px;
+    // padding-top: 50px;
 }
 
 .service {
-//    padding: 50px 0px 50px;
+   padding: 50px 0px 50px;
    min-height: 500px;
    display: flex;
-   align-items: center;
-   position: relative;
-   z-index: 2;
-}
-
-.service__content {
-   padding: 50px 0px 50px;
+   align-items: center;   
 }
 
 .service__heading {
@@ -82,17 +76,7 @@
     background-image: url(/images/home-page/test/services-state-bg.jpg);
 }
 
-.service::before {
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    z-index: -1;
 
-    background-color: rgba(0, 0, 255, 0.5);
-}
 
 
 @media (min-width: 768px) {
@@ -123,22 +107,13 @@
         min-height: 780px;
     }
 
-    .service::before {    
-        right: 45%;     
-    }
-
     .service__content {
-        width: 60%;
-        position: relative;
+        max-width: 60%;
     }
 
-    .service__content::after {
-        content: '';
-        display: block;
-        position: absolute;
-        right: 0px;
-        border: 20px solid transparent; 
-        border-left: 20px solid green;
-    }
+    .service_state_bg,
+    .service_commercial_bg { 
+    background-position: center;
+}
     
 }

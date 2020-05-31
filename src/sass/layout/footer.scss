@@ -43,25 +43,26 @@
     background-color: #f3f4f6;    
 }
 
-.additional-info__item_text-color {
+.additional-info__item_text {
+    font-size: 14px;
     color: #000000;
 }
 
 @media (min-width: 768px) {
 
-    .container {
-        width: 768px;
-        max-width: 100%; 
-        margin: 0 auto;
-    }
+    // .container {
+    //     width: 768px;
+    //     max-width: 100%; 
+    //     margin: 0 auto;
+    // }
 }
 
 @media (min-width: 1620px) {
 
-    .container {
-        width: 1140px;
-        max-width: 100%; 
-        margin: 0 auto;
-    }
+    // .container {
+    //     width: 1140px;
+    //     max-width: 100%; 
+    //     margin: 0 auto;
+    // }
  
 }
