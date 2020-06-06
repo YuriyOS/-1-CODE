@@ -7318,22 +7318,41 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 })(window.Zepto || window.jQuery, window, document);
 $(function () {
-  $('.header__menu-btn').on('click', function () {
+  $('.js-menu-btn').on('click', function () {
     $('.navigation').slideToggle();
-    $('.hamburger').toggleClass('hamburger_active');
+    $('.menu-overlay').fadeToggle();
+    $('body').toggleClass('body_fixed');
   });
-  $('.logo-box-mob__slider').owlCarousel({
-    center: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 3
-      },
-      768: {
-        items: 4
+
+  if ($(window).width() < 1620) {
+    $('main').css('margin-top', $('.header').height() + 'px');
+  } else {
+    var headerHeight = $('.header__top-block').height();
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > headerHeight) {
+        $('.navigation').addClass('navigation_fixed');
+      } else {
+        $('.navigation').removeClass('navigation_fixed');
       }
-    }
-  });
+    });
+  } // $('.header__menu-btn').on('click', function () {
+  //   $('.navigation').slideToggle();
+  //   $('.hamburger').toggleClass('hamburger_active');
+  // });
+  // $('.logo-box-mob__slider').owlCarousel({
+  //   center: true,
+  //   loop: true,
+  //   responsive: {
+  //     0: {
+  //       items: 3,
+  //     },
+  //     768: {
+  //       items: 4,
+  //     },
+  //   },
+  // });
+
+
   $('.reviews__slider').owlCarousel({
     items: 1,
     center: true,
@@ -7373,5 +7392,22 @@ $(function () {
       $('.modal').remove();
       $('body').removeClass('body_fixed');
     });
-  });
+  }); // let headerTopHeight = $('.header-top').outerHeight();
+  // $(window).on('scroll', function () {
+  //   if ($(window).scrollTop() > headerTopHeight) {
+  //     $('.navigation').addClass('navigation_fixed');
+  //   } else {
+  //     $('.navigation').removeClass('navigation_fixed');
+  //   }
+  // });
+  // let logoHeaderHeight = $('.header__logo').outerHeight();
+  // $(window).on('scroll', function () {
+  //   let headerHeight = $('.header').outerHeight();
+  //   if ($(window).scrollTop() > logoHeaderHeight && $(window).width() < 768) {
+  //     $('.contacts').addClass('contacts_fixed');
+  //     $('.navigation').css('top', headerHeight + 'px')
+  //   } else {
+  //     $('.contacts').removeClass('contacts_fixed');
+  //   }
+  // });
 });

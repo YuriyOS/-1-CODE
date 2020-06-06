@@ -5,37 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Комерційна нерухоміст</title>
-    
-    <link rel="stylesheet" href="libs/owlcarusel2/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owlcarusel2/assets/owl.theme.default.css">
-    
-    
+
+    <link
+      rel="stylesheet"
+      href="libs/owlcarusel2/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="libs/owlcarusel2/assets/owl.theme.default.css"
+    />
+
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
+    
   </head>
 
   <body>
-
     <header>
       //='./html/layout/header.html'
     </header>
 
     <main>
+      <div class="container">
+      <!--The div element for the map -->
+      <div id="map" class="map"></div>
+    </div>
 
-
+      <style>
+        .map {
+          width: 100%;
+          height: 500px;
+        }
+      </style>
+      <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var office = { lat: 50.4860606, lng: 30.480162 };
+          // The map, centered at Uluru
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: office,
+          });
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({ position: office, map: map });
+        }
+      </script>
+      <!--Load the API from the specified URL
+      * The async attribute allows the browser to render the page while the API loads
+      * The key parameter will contain your own API key (which is not needed for this tutorial)
+      * The callback parameter executes the initMap() function
+      -->
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoEhjau-OTV-qbaD5T5zKAx_uowS4R3ZE&callback=initMap"
+      ></script>
     </main>
 
     <footer>
-
       //='./html/layout/footer.html'
-
     </footer>
 
-    
     <script src="./libs/owlcarusel2/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
-    
+
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
     <!-- endinject -->
