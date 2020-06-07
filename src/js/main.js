@@ -2,17 +2,32 @@
 
 $(function () {
 
-  $('.js-menu-btn').on('click', function(){
-    $('.navigation').slideToggle();
-    $('.menu-overlay').fadeToggle();
-    $('body').toggleClass('body_fixed');
+  $('.js-menu-btn_open').on('click', function(){
+    $('.navigation').addClass('navigation_visible');
+    $('.navigation__overlay').addClass('navigation__overlay_visible');
+    $('body').addClass('body_fixed');
   });
 
+  $('.js-menu-btn_hide, .js-navigation__overlay').on('click', function(){
+    $('.navigation').removeClass('navigation_visible');
+    $('.navigation__overlay').removeClass('navigation__overlay_visible');
+    $('body').removeClass('body_fixed');
+  });
+
+  let headerHeight = $('.header__top-block').height();
   
   if($(window).width() < 1620) {
     $('main').css('margin-top', $('.header').height() + 'px');
+
+    $(window).on('scroll', function(){
+      if($(window).scrollTop() > headerHeight) {
+        $('.header').addClass('header_shadow');
+      } else {
+        $('.header').removeClass('header_shadow');
+      }
+    })
+
   } else {
-    let headerHeight = $('.header__top-block').height();
 
     $(window).on('scroll', function(){
       if($(window).scrollTop() > headerHeight) {
@@ -22,28 +37,6 @@ $(function () {
       }
     })
   }
-
-  // $('.header__menu-btn').on('click', function () {
-  //   $('.navigation').slideToggle();
-  //   $('.hamburger').toggleClass('hamburger_active');
-  // });
-
-  // $('.logo-box-mob__slider').owlCarousel({
-  //   center: true,
-  //   loop: true,
-
-  //   responsive: {
-  //     0: {
-  //       items: 3,
-  //     },
-  //     768: {
-  //       items: 4,
-  //     },
-  //   },
-  // });
-
-
-
 
   $('.reviews__slider').owlCarousel({
     items: 1,
@@ -64,12 +57,7 @@ $(function () {
         '        <h2 class="heading-style-1">' +
         sTitle +
         '</h2>\n' +
-        '        <form class="form modal__form">        \n' +
-        // '            <!-- Hidden Required Fields -->\n' +
-        // '            <input type="hidden" name="project_name" value="Site Name">\n' +
-        // '            <input type="hidden" name="admin_email" value="admin@mail.com">\n' +
-        // '            <input type="hidden" name="form_subject" value="Form Subject">\n' +
-        // '            <!-- END Hidden Required Fields -->\n' +
+        '        <form class="form modal__form">        \n' +        
         '            <input class="input modal__input main-text" type="text" name="Name" placeholder="Ваше ім\'я..." required><br>\n' +
         '            <input class="input modal__input main-text" type="text" name="E-mail" placeholder="Ваше E-mail..." required><br>\n' +
         '            <input class="input modal__input main-text" type="text" name="Phone" placeholder="Ваш телефон..."><br>\n' +
@@ -86,7 +74,6 @@ $(function () {
 
     $('.modal').fadeIn();
     $('body').addClass('body_fixed');
-    $('body').prepend('<div class="overlay"></div>');
     $('.modal').on('click', function (e) {
       if (
         !$(e.target).closest('.modal__dialog').length &&

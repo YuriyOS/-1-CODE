@@ -68,15 +68,16 @@ html {
   color: #000000;
   background-color: #ffe033;
   border: 1px solid #538dcc;
+
+  &:focus {
+    outline: none;
+
+  }
 }
 
-// .hover-btn:hover {
-//   border: 1px solid #ffffff;
-//   color: #ffffff;
-//   background-color: #538dcc;
-// }
-
-.style-btn:hover {
+.style-btn:hover,
+.style-btn:focus {
+  outline: 0;
   border: 1px solid #ffffff;
   color: #ffffff;
   background-color: #538dcc;
@@ -118,7 +119,6 @@ html {
 
 .heading-style-1,
 .heading-style-2 {
-  // margin: 0px;
   font-family: 'Gotham Pro Medium';  
   text-transform: uppercase;
   text-align: center;
@@ -159,6 +159,11 @@ html {
 
 .main-text_italic {
   font-style: italic;
+}
+
+.map {
+  width: 100%;
+  height: 500px;
 }
 
 @media (min-width: 768px) {
