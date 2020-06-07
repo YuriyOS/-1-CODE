@@ -38,6 +38,15 @@ $(function () {
     })
   }
 
+  $('.logo-box-mob__slider').owlCarousel({
+    items: 3,
+    center: true,
+    loop: true,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true
+  });
+
   $('.reviews__slider').owlCarousel({
     items: 1,
     center: true,
@@ -93,27 +102,5 @@ $(function () {
       $('body').removeClass('body_fixed');
     });
   });
-
-  // let headerTopHeight = $('.header-top').outerHeight();
-
-  // $(window).on('scroll', function () {
-  //   if ($(window).scrollTop() > headerTopHeight) {
-  //     $('.navigation').addClass('navigation_fixed');
-  //   } else {
-  //     $('.navigation').removeClass('navigation_fixed');
-  //   }
-  // });
-
-  // let logoHeaderHeight = $('.header__logo').outerHeight();
-
-  // $(window).on('scroll', function () {
-  //   let headerHeight = $('.header').outerHeight();
-  //   if ($(window).scrollTop() > logoHeaderHeight && $(window).width() < 768) {
-  //     $('.contacts').addClass('contacts_fixed');
-  //     $('.navigation').css('top', headerHeight + 'px')
-  //   } else {
-  //     $('.contacts').removeClass('contacts_fixed');
-  //   }
-  // });
 
 });
