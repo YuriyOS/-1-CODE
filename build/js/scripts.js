@@ -7369,7 +7369,7 @@ $(function () {
 
   function createModal() {
     var sTitle = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Заповніть форму';
-    $('body').prepend('' + '<div class="modal">\n' + '    <div class="modal__dialog">\n' + '        <div class="btn-close"></div>\n' + '        <h2 class="heading-style-1">' + sTitle + '</h2>\n' + '        <form class="form modal__form">        \n' + '            <input class="input modal__input main-text" type="text" name="Name" placeholder="Ваше ім\'я..." required><br>\n' + '            <input class="input modal__input main-text" type="text" name="E-mail" placeholder="Ваше E-mail..." required><br>\n' + '            <input class="input modal__input main-text" type="text" name="Phone" placeholder="Ваш телефон..."><br>\n' + '            <button class="form__btn style-btn reset-btn">ЗАМОВИТИ</button>\n' + '        </form>\n' + '        <p class="main-text main-text_white">Ми НЕ передаємо Ваші дані 3-м особам.</p>\n' + '    </div>\n' + '</div>');
+    $('body').prepend('' + '<div class="modal">\n' + '    <div class="modal__dialog">\n' + '        <div class="btn-close"></div>\n' + '        <h2 class="heading-style-1">' + sTitle + '</h2>\n' + '        <form class="form modal__form">        \n' + '            <input class="input modal__input main-text" type="text" name="Name" placeholder="Ваше ім\'я..." required><br>\n' + '            <input class="input modal__input main-text" type="text" name="E-mail" placeholder="Ваше E-mail..." required><br>\n' + '            <input class="input modal__input main-text" type="text" name="Phone" placeholder="Ваш телефон..."><br>\n' + '            <button type="submit" class="form__btn style-btn reset-btn">ЗАМОВИТИ</button>\n' + '        </form>\n' + '        <p class="main-text main-text_white">Ми НЕ передаємо Ваші дані 3-м особам.</p>\n' + '    </div>\n' + '</div>');
   }
 
   $('.btn-form').on('click', function (e) {
@@ -7390,5 +7390,24 @@ $(function () {
       $('.modal').remove();
       $('body').removeClass('body_fixed');
     });
+  });
+  $(".modal__form").submit(function (e) {
+    //Change
+    console.log('sagdgd');
+    e.preventDefault();
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: 'mail.php',
+      // data: data,
+      // dataType: 'json',
+      success: function success() {
+        console.log('Success');
+      },
+      error: function error(xhr, ajaxOptions, thrownError) {
+        console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+      }
+    });
+    return false;
   });
 });
